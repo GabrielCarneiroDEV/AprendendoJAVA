@@ -1,0 +1,38 @@
+todo programa em java pode ser composto por pacotes  (package) ex:
+
+package primeiroprograma;
+
+todo programa em java deve ter um comando de cabeçalho da class ex:
+
+package PrimeiroPrograma;
+
+public class PrimeiroPrograma {
+    
+
+} 
+
+dentro do bloco(CLASS) criamos um metodo
+
+public class PrimeiroPrograma {
+    public static void main(String[] args){
+        System.out.print("olá, mundo!");
+    }
+
+} 
+
+
+pra facilitar o comando de print no netbeans usar sout em seguida pressionar tab, no vscode sysout e em seguida apertar enter
+
+o metodo principal no netbeans pode ser chamado utilizando psvm e pressionando tab, no vs code podemos digitar "main" e pressionar enter
+
+
+palavras utilizando letras maiusculas ou minusculas: 
+
+classes ou interfaces utilizam letras maiusculas no inicio da palavra e camel case caso existam outras palavras
+
+se a primeira letra for minusculas e outras palavras começando com maiusculas podem ser um atributo ou uma variável ou um método
+
+
+se todas as letras de todas as palavras estivem minusculas, trata-se de um pacote
+
+todas as letras maiusculas é usado para nomear constantes
