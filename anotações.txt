@@ -36,3 +36,7 @@ se a primeira letra for minusculas e outras palavras começando com maiusculas p
 se todas as letras de todas as palavras estivem minusculas, trata-se de um pacote
 
 todas as letras maiusculas é usado para nomear constantes
+
+
+
+Utilizando o swing consigo criar janelas para os programas em java, porém, no vscode não é possível manipular essas janelas com facilidade como acontece no netbeans
