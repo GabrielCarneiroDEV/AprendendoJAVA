@@ -40,3 +40,94 @@ todas as letras maiusculas é usado para nomear constantes
 
 
 Utilizando o swing consigo criar janelas para os programas em java, porém, no vscode não é possível manipular essas janelas com facilidade como acontece no netbeans
+
+
+
+comentários em java: // para uma linha
+/* comenta tudo dentro do barra asterisco   */ 
+
+comentário para documentação:
+/**
+@author
+@version
+@since
+
+
+
+*/
+
+
+
+
+java é uma linguagem fortemente tipada, para fazer alterações no tipo do dado é necessário fazer uma conversão.
+
+formas de declarar variaveis em java e tipos:
+
+
+int idade = 26;
+
+
+typecast:
+int idade = (int) 26;
+
+utilizando class:
+*nesse caso não é uma variável mas um objeto
+Integer idade = new Integer (3);
+
+
+exemplo com numeros reais:
+
+float salario = 1800.23f; <- o f no final indica que o numero é float
+
+ type cast:
+ float salario = (float) 1800.23;
+
+ Class:
+ Float salario = new Float(1800.23);
+
+
+
+ tipo caractere:
+*em java se utiliza aspas simples:
+
+ char letra = 'G';
+
+typecast:
+char letra = (char) 'G'; 
+
+class:
+Character letra = new Character ('G');
+
+valores boleanos:
+
+boolean casado = true;
+
+typecast:
+boolean casado = (boolean) true;
+
+class:
+Boolean casado = new Boolean (true)
+
+
+ *não existe tipo string no java, existe a class String, diferente do tipo char o conteúdo deve ser escrito com aspas duplas.
+
+
+ lógico - boolean - 1 bit 
+ literal - char - 1 byte
+ literal string - 1 byte pra cada caractere
+ 
+ inteiros - byte - 1 byte - maior valor é 127
+ inteiros - short - 2 bytes - maior valor é 32767
+ inteiros - int - 4 bytes - maior 2 147 483
+ inteiros - long - 8 byte - 2 elevado a 63
+
+reais - float  - 4 bytes
+reais double - 8 bytes
+
+
+
+saída de dados em java:
+
+
+
+  
