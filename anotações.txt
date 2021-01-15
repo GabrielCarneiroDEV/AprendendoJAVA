@@ -127,7 +127,51 @@ reais double - 8 bytes
 
 
 saída de dados em java:
+exemplos:
+      String nome = "Gabriel";
+            float nota = 8.5f;
+            System.out.println("A nota de " + nome + " é " + nota); - concatenando variaveis e strings
+            System.out.printf("A nota de %s é %.2f \n",nome, nota); - print formatado e usando duas casas decimais 
+            System.out.format("A nota de %s é %.3f \n",nome, nota); - outra forma de formatar e usando 3 casas decimais
 
 
 
+entrada de dados em java:
+o java.lang não possui comandos de entrada de dados, pra isso podemos importar a biblioteca java.util.Scanner
+
+import java.util.Scanner
+
+
+Scanner entrada = new Scanner(System.in);
+            String nome = entrada.nextLine();
+            float nota = entrada.nextFloat();
+            System.out.format("A nota de %s é %.3f \n",nome, nota);
+
+
+
+Melhorando a interatividade:
+
+  Scanner entrada = new Scanner(System.in);
+            System.out.println("Digite o nome do aluno: ");
+            String nome = entrada.nextLine();
+            System.out.println("Digite a nota do aluno: ");
+            float nota = entrada.nextFloat();
+           
+            System.out.format("A nota de %s é %.3f \n",nome, nota);
   
+
+
+  então, a entrada é inserida em um objeto: Scanner input = new Scanner (System.in);
+
+  o objeto input aloca o dado dentro de uma variavel utilizando o sufixo ... = input.nextInt() ou nextFloat() ou nextLine() (para Strings)...
+
+
+  converter inteiro em string:
+    int idade = 30;
+    String valor = Integer.toString(idade);
+
+
+    converter string em inteiro:
+    int idade = "30";
+    int idade = Integer.parseInt(valor);
+
