@@ -240,3 +240,12 @@ int numeroAleatorio = (int) (10 + aleatorio * (50-10));
 
 o resultado será um valor entre 10 e 50
 
+
+
+-Java também possui operador ternário
+exemplo:
+maior = n1 > n2 ? n1 : n2;
+
+na operação acima se o n1 for maior que n2 a variavel maior recebe n1 se não, recebe n2
+
+  
