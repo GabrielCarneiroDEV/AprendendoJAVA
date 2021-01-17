@@ -175,3 +175,68 @@ Melhorando a interatividade:
     int idade = "30";
     int idade = Integer.parseInt(valor);
 
+
+
+operadores aritmeticos:
+
+os operadores são similares aos de JavaScript, linguagem C...
+
++
+-
+*
+/
+%
+++
+--
++=
+-=
+*=
+/=
+%=
+
+classe Math:
+valor de pi:
+Math.PI
+
+
+potencia:
+Math.pow(numerador,denominador);
+
+
+raiz quadrada:
+Math.sqrt(valor);
+
+
+raiz cubica:
+Math.cbrt(valor)
+
+
+
+
+arredondamentos:
+
+Valor absoluto:
+Math.abs(ex:-10) o valor será 10
+
+arredondamento pra baixo:
+Math.floor(ex:2.9) - o valor será 2
+
+arredondamento pra cima:
+Math.ceil(ex:4.3) - o valor será 5
+
+arredondamento aritmetico: 
+Math.round(ex:4.3 e 4.8) - o primeiro valor será 4 e o segundo será 5
+
+numeros aleatorios:
+Math.random() - cria um numero entre 0.0  a 1.0
+
+para gerar um numero aleatorio dentro de um limite estabelecido, podemos usar a seguinte sentença:
+
+double aleatorio = Math.random();
+(valorInicial + aleatorio * (valorFinal-valorIncial));
+
+ex:
+int numeroAleatorio = (int) (10 + aleatorio * (50-10));
+
+o resultado será um valor entre 10 e 50
+
