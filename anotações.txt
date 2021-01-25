@@ -248,4 +248,93 @@ maior = n1 > n2 ? n1 : n2;
 
 na operação acima se o n1 for maior que n2 a variavel maior recebe n1 se não, recebe n2
 
+
+
+vetores/arrays:
+
+a linha abaixo cria um vetor com 4 posições:
+
+int n [] = new int [4];
+ou
+int [] n = new int[4];
+
+*um vetor no java é um objeto
+
+  atribuindo valores ao vetor:
+  n[0] = 3;
+  n[1] = 5;
+  n[2] = 8;
+  n[3] = 2;
+
+
+  para criar o vetor ja atribuindo se escreve:
+  int n[] = {3,8,5,2};
+
+
+
+varrer vetor com for:
+  for(int i = 0; i <= n.length){
+    System.out.println(n[i]);
+  }
+
+
+  for it:
+  for (int valor: n){
+    System.out.println(valor)
+  }
+  *nesse caso a variavel valor a cada laço vai receber o numero depositado em n.
+
+
+  colocando vetor em ordem:
+
+  int num [] = {3, 5, 1, 8, 4};
+  Arrays.sort(num);
+
+  alocando a posição de um vetor dentro de uma variavel:
+
+  int posicao = Arrays.binarySearch(num, 8);
+  * nesse caso num é o nome da array e 8 é o valor que será buscado na array, o valor que será guardado em posicao é 3.
+ ** se o valor buscado não existir dentro da array o valor guardado na variavel será o valor buscado negativo. ex: -8.
+
+
+colocando o mesmo valor em todas as posições do vetor:
+
+ Arrays.fill(num, 0); 
+ 
+
+ procedimentos:
+
+ sem retorno:
+
+ void soma (int a, int b){
+   int s = a + b;
+   System.out.print(s);
+
+ }
+
+ soma(5,2); 
+ *chamada da função passando 5 e 2 como parametro
+
+ observar código escrito no projeto TesteFunca01 :
+
+ as funções são escritas dentro do public class e pode ser chamadas no "main".
+ Porém ocorrerá um erro prq as funções precisam utilizar o método estatico, ou seja, ele não precisa ser transformado em objeto, sendo asism o código ficará:
+
+ static void soma (int a, int b)...
+
+
+com retorno:
+
+static int sub (int a, int b){
+  int s = a - b;
   
+  return s;
+}
+
+int valor = sub(5,2)
+
+
+ao criar uma função com a palavra public na frente, ela pode ser utilizada por qualquer parte do programa, ex:
+public static int sub( int a, int b)...
+
+se utilizar private, ela não poderá ser utlizada em outra classe  do programa.
