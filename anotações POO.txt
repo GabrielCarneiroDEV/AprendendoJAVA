@@ -1,0 +1,83 @@
+Objeto = coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas CARACTERÍSTICAS, COMPORTAMENTOS e ESTADO
+
+um objeto é criado apartir de uma classe
+
+uma classe precisa responder a três perguntas:
+
+coisas que eu tenho, coisas que eu faço, como eu estou agora? 
+
+
+CARACTERÍSTICAS = coisas que eu tenho = ATRIBUTOS
+
+COMPORTAMENTOS = coisas que eu faço = MÉTODOS
+
+ESTADO =  como eu stou agora = ESTADO
+
+ex:
+Classe Caneta{
+
+modelo: Caractere
+cor: Caractere
+ponta: Real 
+carga: inteiro
+tampada: Logico
+
+
+Metodo rabiscar(){
+se (tampada) entao{
+
+Escreva("ERRO")
+
+}senao{
+Escreva("Rabisco")
+
+}FimSe
+ }FimMetodo
+
+
+Metodo tampar(){
+    tampada = verdadeiro
+
+} FimMetodo  
+
+
+
+}FimClasse
+
+
+Acima vemos atributos e métodos, o estado sempre é definido no momento específico. São as características identificadas através dos atributos ou como ela pode estar após a utilização de métodos.
+
+pra gerar um objeto a partir de uma classe  é preciso fazer um INSTANCIAMENTO, é feito da seguinte forma:
+
+primeiraCaneta = nova Caneta
+Agora é possível modificar os atributos do objeto primeiraCaneta
+
+primeiraCaneta.cor = "Azul"
+primeiraCaneta.ponta = 0.5
+primeiraCaneta.tampada = falso
+
+podemos também chamar um dos métodos:
+
+primeiraCaneta.rabiscar()
+
+podemos, apartir da classe Caneta instanciar uma nova caneta, ou quantas forem necessárias:
+
+segundaCaneta = nova Caneta
+
+e ainda é possível ter os mesmos atríbutos com novos estados nessa caneta:
+
+segundaCaneta.cor = "Vermelha"
+segundaCaneta.ponta = 1.0
+segundaCaneta.tampada = falso
+
+e podemos chamar métodos :
+
+segundaCaneta.tampar()
+
+
+Classe - Define os atributos e métodos comuns que serão compartilhados por um objeto.
+
+Objeto - É a instância de uma classe.
+
+
+
