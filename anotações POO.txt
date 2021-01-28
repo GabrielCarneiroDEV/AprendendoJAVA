@@ -81,3 +81,13 @@ Objeto - É a instância de uma classe.
 
 
 
+VISIBILIDADE:
+
+
+Linguagem de Modelagem Unificada
+UML
+
+Diagrama de classes
+
+
+
