@@ -88,6 +88,200 @@ Linguagem de Modelagem Unificada
 UML
 
 Diagrama de classes
+para o diagrama de classes, toda classe é um retângulo
+
+na parte superior em negrito e com a primeira letra maiúscula vem o nome da classe
+
+Caneta
+
+Logo depois vem os atributos:
+
+modelo
+cor
+ponta
+carga
+tampada
+
+Em seguida os métodos:
+
+escrever()
+rabiscar()
+pintar()
+tampar()
+destampar()
+
+O nome da classe começa com letra maiúscula, os atributos e os métodos com letra minúscula
+e os métodos tem parenteses no final, isso pode facilitar antificalçao dos elementos.
+
+
+Modificadores de visiblidade:
+Visibilidade indicam o nível de acesso aos componentes internos de uma classe(atributos e métodos).
+
++ = representa a visbilidade PÚBLICA
+- = representa a visiblidade PRIVADA
+# = representa  o modo PROTEGIDO
+
+exemplo com telefone:
+
+telefone PÚBLICO todo mundo pode usar
+telefone PRIVADO só eu posso usar
+telefone PROTEGIDO só a mãe e os filhos podem usar
+
+PÚBLICO - a classe atual e todas as outras classes podem ter acesso.
+PRIVADO - somente a classe atual tem acesso
+PROTEGIDO - a classes atual e todas as suas sub-classes tem acesso
 
 
 
+Voltando ao diagrama de classes:
+
+Caneta
++ modelo
++ cor 
+- ponta
+# carga
+# tampada
+
++ escrever()
++ rabiscar()
++ pintar ()
+- tampar()
+- destampar()
+
+Classe Caneta{
+
+publico modelo: Caractere;
+publico cor: Caractere;
+privado ponta: Real;
+protegido carga: inteiro;
+protegido tampada: lógico;
+
+publico Metodo escrever(){
+
+}FimMetodo
+
+publico Metodo raviscar(){
+
+}FimMetodo
+
+}FimClasse
+
+
+primeiraCaneta = nova Caneta
+
+primeiraCaneta.modelo = "BIC cristal"; - metodo publico, é possível ser acessado.
+primeiraCaneta.cor = "Azul"; - método publico, é possivel ser acessado. 
+primeiraCaneta.ponta = 0.5; - método privado, não é possível ter acesso
+primeiraCaneta.carga = 80; - método protegido, não é possível ser acessado prq a chamada não faz parte de um filho
+
+
+conteúdo prático em Aula2POO 
+
+caso não específique a visibilidade, ela será publica para pacote, ou seja só será vísivel no pacote atual
+para tornar visivel para outros pacotes é necessário especificar. 
+
+
+
+métodos especiais:
+
+Na teoria de POO existem métodos com nomes específicos, como um padrão a se seguir.
+
+Um dos métodos especiais são os métodos Acessores:
+nesse padrão, devemos utilizar um método get para ter acesso a um atributo.
+
+Getters
+Getter é um método que pegar alguma coisa
+
+
+Outros métodos especiais são os Métodos Modificadores:
+nesse padrão, devemos utilizar um método set para colocar valores em atributos. 
+Setters
+Setter é um método que coloca alguma coisa
+
+
+
+Ex: 
+Caneta
+atributos:
++ modelo
+- ponta
+métodos:
++ getModelo()
++ setModelo(m)
++ getponta()
++ setPonta(p)
+
+
+Classe Caneta{
+publico modelo: Caractere
+privado ponta: Real
+
+publico Metodo getModelo(){
+
+
+}FimMetodo
+
+publico Metodo setModelo(m:caractere){
+modelo = m;
+
+}FimMetodo
+
+publico Metodo getPonta(){
+
+}FimMetodo
+
+publico Metodo setPonta(p:real){
+ponta = p;
+
+}FimMetodo
+
+}FimClasse
+
+primeiraCaneta = nova caneta;
+primeiraCaneta.setModelo("BIC Cristal")
+primeiraCaneta.setPonta(0.5)
+
+Escreva(primeiraCaneta.getModelo())
+Escreva(primeiraCaneta.getPonta())
+
+
+Método construtor (construct)
+
+esse método serve para inicializar o objeto com atributos e estadospré determinados:
+
+
+Classe Caneta{
+
+
+Metodo constructor(){
+tampar()
+cor = "azul"
+}FimMetodo
+
+}FimClasse
+
+o método construtor também pode receber parâmetros:
+
+
+Classe Caneta{
+
+
+Metodo constructor(m: Caractere, c:Caractere, p:Real){
+setModelo(m)
+setCor(c)
+setPonta(p)
+tampar()
+
+
+}FimMetodo
+
+}FimClasse
+
+primeiraCaneta = nova Caneta ("BIC", "Azul", 0.5)
+
+*em Aula3POO exercício sobre Métodos especiais
+
+*método construtor deve ter o mesmo nome que a classe
+
+
+* No netbeans é possível criar todos os métodosutilizando ctrl+i, inclusive criar os métodos especiais
